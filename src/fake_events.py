@@ -1,7 +1,5 @@
 class fake_event:
-  def __init__(self, function, *, is_async: bool = False):
-    self.fonction = function
-    self.is_async: bool = is_async
+  def __init__(self):
     self.co: list = []
 
   def execute(self, *args):
