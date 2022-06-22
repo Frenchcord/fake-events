@@ -52,3 +52,14 @@ event.execute()
 ```py
 event.execute('Hello, world!')
 ```
+# errors
+Le code continue lors d'une erreure
+```py
+event = fake_event(errors=False)
+```
+Le code stop lors d'une erreure
+```py
+event = fake_event(errors=True)
+# ou
+event = fake_event()
+```
